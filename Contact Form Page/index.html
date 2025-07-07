@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Get in Touch</h1>
+        <p>
+          We'd love to hear from you! Whether you have a question about
+          features, pricing, need a demo, or anything else—our team is ready to
+          answer all your questions.
+        </p>
+      </section>
+
+      <form>
+        <label for="name"><strong>Enter your full name:</strong> </label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="e.g., John Doe"
+          required
+        />
+        <br />
+        <label for="email"><strong>Enter your E-mail address:</strong></label
+        ><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Ex: john@example.com"
+        />
+
+        <br />
+
+        <fieldset>
+          <legend><strong>Preferred Subject</strong></legend>
+
+          <input type="radio" id="inquiry" name="sub" value="inquiry" checked />
+          <label for="inquiry">General Inquiry</label>
+          <br />
+          <input type="radio" id="support" name="sub" value="support" />
+          <label for="support">Support</label>
+          <br />
+          <input type="radio" id="feedback" name="sub" value="feedback" />
+          <label for="feedback">Feedback</label>
+          <br />
+          <input type="radio" id="partner" name="sub" value="partner" />
+          <label for="partner">Partnership</label>
+        </fieldset>
+        <br />
+        <label for="msg"><strong>Message:</strong></label
+        ><br />
+        <textarea
+          id="msg"
+          name="msg"
+          placeholder="Write your message here..."
+          rows="5"
+          cols="30"
+          required
+        ></textarea
+        ><br />
+        <fieldset>
+          <legend><strong>Preferred Contact Method:</strong></legend>
+          <input type="radio" id="em" name="contact" value="em" checked />
+          <label for="em">Email</label>
+          <br />
+          <input type="radio" id="phn" name="contact" value="phn" />
+          <label for="phn">Phone</label>
+        </fieldset>
+        <h3>Subscribe to Newsletter?</h3>
+        <input type="checkbox" id="susb" name="subs" checked />
+        <label for="subs">Yes, sign me up for updates!</label>
+        <br />
+        <button>Send Message</button>
+      </form>
+      <footer>&copy; 2025 Example Company- All rights rserved</footer>
+    </main>
+  </body>
+</html>
